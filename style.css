@@ -45,8 +45,7 @@ nav {
     border: 2px solid black;
     border-radius: 7px;
     box-shadow:  0px 3px 10px rgba(0, 0, 0, 0.438);
-    background-color: rgb(243, 242, 242);
-
+    background-color: rgb(236, 236, 236);
 }
 
 .right {
@@ -66,7 +65,7 @@ nav {
 }
 
 .left img:hover{
-    transform: scale(2.05) rotate(360deg);
+    transform: scale(2.05);
     
 }
 
@@ -81,17 +80,51 @@ nav {
 }
 
 #s2 {
-    height: 100vh;
-    background-image: url(https://i.pinimg.com/1200x/c6/22/9d/c6229dee8037acd884e3d2a41840ecf8.jpg);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url(images/wp4254951.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+
+.wrapTexts {
+    padding: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
 }
 
 #s3 {
     height: 100vh;
     padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    box-shadow: 0px 3px 10px #090909;
+    border-radius: 20px;
 }
 
 #s4 {
@@ -106,4 +139,71 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+
+h1 {
+    font-family: "Luxurious Roman", serif;
+    font-size: 50px;
+    font-style: normal;
+}
+
+#s4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#conteudo{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#titulo {
+    background-color: rgb(128, 128, 127);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.conteudoElm {
+    min-width: 460px;
+    max-width: 600px;
+    width: auto;
+}
+
+.conteudoElm p{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.conteudoElm img{
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+i{
+    transition: all 200ms ease-in-out;
+}
+
+i:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+@media (width <= 1000px){
+    #s1 {
+        padding-top: 100px;
+    }
+    #s2 {
+        margin-top: 50px;
+    }
 }
