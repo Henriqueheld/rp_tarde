@@ -15,10 +15,11 @@
 
 <body>
     <nav>
-        <a href="#s1">Primeira</a>
-        <a href="#s2">Segunda</a>
-        <a href="#s3">Terceira</a>
-        <a href="#s4">Quarta</a>
+        <a href="#s1">Home</a>
+        <a href="#s2">Paralax</a>
+        <a href="#s3">Video</a>
+        <a href="#s4">Exercicio</a>
+        <a href="#s5">Contato</a>
     </nav>
     <main>
         <section id="s1">
@@ -79,8 +80,19 @@
             </div>
             <div id="conteudo">
                 <div class="conteudoElm"><img src="images/moto2.jpg" alt=""></div>
-                <div class="conteudoElm"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel veritatis pariatur, enim inventore reiciendis ut explicabo corporis maxime, nobis voluptatibus eveniet distinctio, quae dolorum quos dicta quis esse placeat sint.</p></div>
+                <div class="conteudoElm" id="elementText"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel veritatis pariatur, enim inventore reiciendis ut explicabo corporis maxime, nobis voluptatibus eveniet distinctio, quae dolorum quos dicta quis esse placeat sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sint, doloribus ea placeat obcaecati libero possimus commodi debitis exercitationem vel recusandae facilis ex omnis? Iusto eveniet delectus assumenda repellendus veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
                 <div class="conteudoElm"><img src="images/Zontes-GK350-600x400.jpg" alt=""></div>
+            </div>
+        </section>
+
+        <section id="s5">
+            <h2>Contato</h2>
+            <div class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Digite seu nome" id="nome">
+                <label for="assunto">Mensagem:</label>
+                <textarea placeholder="Digite sua Mensagem" id="assunto"></textarea>
+                <button onclick="enviar()">ENVIAR</button>
             </div>
         </section>
 
